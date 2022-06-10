@@ -1,0 +1,182 @@
+    .nav-log a {
+        color: rgb(133, 187, 249);
+    }
+    
+    .nav-log a:hover {
+        color: white;
+    }
+    
+    .errors {
+        color: red;
+        border: solid grey 1px;
+        margin: 10px;
+        padding: 5px;
+        border-radius: 10px 10px;
+    }
+    
+    .errors_container {
+        width: 60%;
+    }
+    
+    .nameSkill {
+        list-style-type: none;
+    }
+    
+    table {
+        width: 100%;
+    }
+    
+    th {
+        border-bottom: 2px solid black;
+    }
+    
+    td {
+        border-bottom: 1px solid #ddd;
+    }
+    
+    tr:hover {
+        background-color: beige;
+    }
+    
+    .tabUser td:nth-child(-n+1) {
+        /*** Does not display the firt two children (in this case to forms for save and delete) ***/
+        display: block;
+    }
+    
+    .user th> :nth-child(-n+5) {
+        /*** Does add width to the firt four children ***/
+        width: 15%;
+    }
+    
+    .user th> :nth-child(n+3) {
+        /*** Does add width to the last two children ***/
+        width: 10%;
+    }
+    /***  experiences togle hide/show ***/
+    
+    .experience_details {
+        cursor: pointer;
+        display: block;
+        border-radius: 2px;
+        border: solid lightgrey 1px;
+    }
+    
+    input+.experience_details+.details {
+        display: none;
+    }
+    
+    .experience_details:after {
+        content: ' \22C1';
+        float: right;
+    }
+    
+     :checked+.experience_details:after {
+        content: ' \22C0';
+        color: royalblue;
+    }
+    
+    input:checked+.experience_details+.details {
+        display: block;
+    }
+    
+     :checked+.experience_details {
+        color: royalblue;
+    }
+    
+    .experience_details,
+    .details {
+        padding: 10px;
+    }
+    
+    .details {
+        border-radius: 2px;
+        border: solid lightgray 1px;
+    }
+    
+    .add_experience {
+        margin-top: 10px;
+        text-align: center;
+        width: 100%;
+        border: solid lightgray 1px;
+        border-radius: 5px;
+    }
+    
+    .btn_delete {
+        background-color: red;
+    }
+    
+    .container_delete {
+        border: solid lightgray 1px;
+        margin: auto;
+        margin-top: 30px;
+        width: 30%;
+        padding: 10px;
+        border-radius: 10px;
+    }
+    
+    .txt_valid {
+        color: green;
+    }
+
+    .txt_delete {
+        color: red;
+    }
+    
+    .select_view {
+        appearance: menulist-button;
+    }
+    
+    .checkbox_skill {
+        padding: 5px;
+    }
+    
+    .checkboxes_skills_container {
+        width: 95%;
+    }
+    
+    .btn_add_experience {
+        float: right;
+        margin: 5px;
+    }
+    
+    .btn_experience_container {
+        text-align: end;
+    }
+    
+    .skillsUser {
+        width: 15%;
+        border-radius: 8px;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .masteringSkill {
+        margin: 10px;
+        height: auto;
+        display: flex;
+        justify-content: flex-start;
+    }
+    
+    .skillLevel {
+        background: white;
+        color: black;
+        padding: 0px 5px 0px 5px;
+        border-radius: 8px;
+    }
+    
+    .filter_skill {
+        padding: 15px;
+        margin: auto;
+    }
+
+    .skill_tag {
+        border-radius: 3px;
+    }
+
+    .bg_blue {
+        background-color: lightblue;
+    }
+
+    .bg_violet {
+        background-color: violet;
+    }
